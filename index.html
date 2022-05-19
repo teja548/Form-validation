@@ -40,3 +40,28 @@
         }
     </style>
 </head>
+
+<body>
+    <div class="login-form">
+        <form id='form'>
+            <h2 class="text-center">Log in</h2>
+            <div class="form-group">
+                <input type="text" class="form-control" id='email' placeholder="Email" oninput="validateForm()">
+                <span id='err-email'></span>
+            </div>
+            <div class="form-group">
+                <input type="password" id='password' class="form-control" placeholder="Password"
+                    oninput="validateForm()">
+                <span id='err-pass'></span>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-secondary btn-block" id='button' disabled>
+                    Log In
+                </button>
+            </div>
+    </div>
+</body>
+
+<script src="./index.js"></script>
+
+</html>
